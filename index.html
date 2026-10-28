@@ -13,7 +13,7 @@
   <link rel="icon" href="img/favicon-48.png" type="image/png" sizes="48x48">
   <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
   <link rel="preload" href="img/logo.webp" as="image">
-  <link rel="stylesheet" href="css/style.css?v=2">
+  <link rel="stylesheet" href="css/style.css?v=3">
 </head>
 <body>
 
@@ -74,6 +74,11 @@
             <a href="#orcamento" class="btn btn--wa btn--lg"><svg class="ic"><use href="#i-chat"/></svg> Pedir orçamento</a>
             <a href="#onde-comprar" class="btn btn--ghost btn--lg">Ver lojas online <svg class="ic"><use href="#i-arrow"/></svg></a>
           </div>
+          <div class="hero__shops">
+            <span>Também estamos no</span>
+            <a href="#onde-comprar"><img src="img/mercadolivre.webp" alt="Mercado Livre" width="196" height="160"></a>
+            <a href="#onde-comprar"><img src="img/shopee.webp" alt="Shopee" width="128" height="128"></a>
+          </div>
           <ul class="hero__perks">
             <li><svg class="ic"><use href="#i-truck"/></svg> Entrega grátis em Manaus</li>
             <li><svg class="ic"><use href="#i-store"/></svg> Retirada na loja</li>
@@ -98,13 +103,13 @@
         <!-- Links das lojas: troque os endereços em js/script.js (objeto LINKS) -->
         <div class="channels">
           <article class="channel channel--ml">
-            <div class="channel__icon"><svg class="ic ic--lg"><use href="#i-cart"/></svg></div>
+            <img class="channel__logo channel__logo--ml" src="img/mercadolivre.webp" alt="Mercado Livre" width="196" height="160" loading="lazy">
             <h3>Mercado Livre</h3>
             <p>Compre com a segurança do Mercado Livre e acompanhe a entrega pelo app.</p>
             <a href="#orcamento" class="btn btn--ml" data-link="mercadolivre" target="_blank" rel="noopener">Ver loja no Mercado Livre <svg class="ic"><use href="#i-arrow"/></svg></a>
           </article>
           <article class="channel channel--shopee">
-            <div class="channel__icon"><svg class="ic ic--lg"><use href="#i-bag"/></svg></div>
+            <img class="channel__logo" src="img/shopee.webp" alt="Shopee" width="128" height="128" loading="lazy">
             <h3>Shopee</h3>
             <p>Nossas peças também estão na Shopee, com frete vantajoso e cupons da plataforma.</p>
             <a href="#orcamento" class="btn btn--shopee" data-link="shopee" target="_blank" rel="noopener">Ver loja na Shopee <svg class="ic"><use href="#i-arrow"/></svg></a>
@@ -230,8 +235,8 @@
     <div class="container footer__inner">
       <img src="img/logo.webp" alt="Manaus Auto Peças" width="180" height="77" loading="lazy" class="footer__logo">
       <nav class="footer__links" aria-label="Lojas e redes">
-        <a href="#orcamento" data-link="mercadolivre" target="_blank" rel="noopener">Mercado Livre</a>
-        <a href="#orcamento" data-link="shopee" target="_blank" rel="noopener">Shopee</a>
+        <a href="#orcamento" data-link="mercadolivre" target="_blank" rel="noopener" class="footer__shop"><img src="img/mercadolivre.webp" alt="" width="196" height="160" loading="lazy"> Mercado Livre</a>
+        <a href="#orcamento" data-link="shopee" target="_blank" rel="noopener" class="footer__shop"><img src="img/shopee.webp" alt="" width="128" height="128" loading="lazy"> Shopee</a>
         <a href="https://www.instagram.com/manaus.auto/" target="_blank" rel="noopener">Instagram</a>
         <a href="https://www.facebook.com/p/Manaus-Auto-Pe%C3%A7as-61572547450888/" target="_blank" rel="noopener">Facebook</a>
       </nav>
@@ -243,6 +248,6 @@
     <svg class="ic ic--lg"><use href="#i-chat"/></svg>
   </a>
 
-  <script src="js/script.js?v=2" defer></script>
+  <script src="js/script.js?v=3" defer></script>
 </body>
 </html>
