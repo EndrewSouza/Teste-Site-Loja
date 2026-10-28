@@ -5,8 +5,8 @@
 /* >>> COLE AQUI OS LINKS DAS LOJAS <<<
    Enquanto estiver vazio, o botão abre o WhatsApp da loja. */
 const LINKS = {
-  mercadolivre: '', // ex: 'https://www.mercadolivre.com.br/pagina/manausautopecas'
-  shopee: ''        // ex: 'https://shopee.com.br/manausautopecas'
+  mercadolivre: 'https://www.mercadolivre.com.br/pagina/manausauto',
+  shopee: 'https://shopee.com.br/manausautopecas'
 };
 
 const WHATSAPP = '5592991266860';
